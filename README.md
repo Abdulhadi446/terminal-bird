@@ -67,6 +67,13 @@ Custom prefix:
 The installer also creates a desktop entry so Terminal Bird shows up in your
 application menu.
 
+Once installed, run it from any directory with:
+
+```bash
+bird            # short alias
+terminal-bird   # full name, same thing
+```
+
 ### Windows
 
 Terminal Bird uses `termios` for raw keyboard input, so it needs a POSIX
@@ -294,8 +301,9 @@ physics stay identical whether you render at 20, 60 or 120 FPS.
 # run the test suite
 python3 -m unittest discover -v tests/
 
-# record a demo GIF (needs ImageMagick + a terminal)
-python3 flappy.py --demo
+# run the game from any directory
+bird            # or: terminal-bird
+bird --demo     # autopilot, never writes a score
 ```
 
 ---

@@ -22,7 +22,7 @@ Usage: ./install.sh [--user|--system|--prefix DIR]
   --system   install under /usr/local (needs root or sudo)
   --prefix   custom install prefix
 
-After installing, run:  terminal-bird
+After installing, run:  bird        (or the full name: terminal-bird)
 HELP
       exit 0
       ;;
@@ -86,6 +86,8 @@ log "installing python entry: $SOURCE_PY -> $BIN_DIR/terminal-bird"
 install -m 0644 "$SOURCE_PY" "$APP_DIR/flappy.py"
 printf '#!/bin/sh\nexec "%s" "%s" "$@"\n' "$PYTHON_BIN" "$APP_DIR/flappy.py" > "$BIN_DIR/terminal-bird"
 chmod 0755 "$BIN_DIR/terminal-bird"
+# install a short alias
+ln -sf "$BIN_DIR/terminal-bird" "$BIN_DIR/bird"
 
 # optional desktop entry (Linux/BSD)
 if [[ -d "$HOME/.local" ]]; then
@@ -118,7 +120,7 @@ case ":$PATH:" in
     ;;
 esac
 
-if [[ ! -x "$BIN_DIR/terminal-bird" ]]; then
+if [[ ! -x "$BIN_DIR/terminal-bird" || ! -e "$BIN_DIR/bird" ]]; then
   fail "install step did not place the terminal-bird executable"
 fi
 
@@ -127,7 +129,8 @@ cat <<EOF
 Terminal Bird is installed.
 
 Run it from any directory with:
-    terminal-bird
+    bird
+(terminal-bird works too.)
 
 If your shell doesn't find it yet, either restart your shell or run:
     export PATH="$BIN_DIR:\$PATH"
