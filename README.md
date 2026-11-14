@@ -5,13 +5,13 @@ No browser, no window, no images, no network — just Python 3 and the
 standard library, drawing everything with ANSI truecolor and Unicode
 half-block characters.
 
-![Terminal Bird gameplay demo](https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/demo.gif)
+![Terminal Bird gameplay demo](assets/demo.gif)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/start.png" width="48%" alt="Title screen" />
-  <img src="https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/play.png" width="48%" alt="Gameplay" />
-  <img src="https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/pause.png" width="32%" alt="Pause screen" />
-  <img src="https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/gameover.png" width="32%" alt="Game over screen" />
+  <img src="assets/start.png" width="48%" alt="Title screen" />
+  <img src="assets/play.png" width="48%" alt="Gameplay" />
+  <img src="assets/pause.png" width="32%" alt="Pause screen" />
+  <img src="assets/gameover.png" width="32%" alt="Game over screen" />
 </p>
 
 ---
@@ -133,11 +133,11 @@ Input is read instantly in raw mode — no Enter required.
 
 | Title | Gameplay |
 |---|---|
-| ![Title screen](https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/start.png) | ![Gameplay](https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/play.png) |
+| ![Title screen](assets/start.png) | ![Gameplay](assets/play.png) |
 
 | Paused | Game over |
 |---|---|
-| ![Pause screen](https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/pause.png) | ![Game over screen](https://raw.githubusercontent.com/Abdulhadi446/terminal-bird/main/assets/gameover.png) |
+| ![Pause screen](assets/pause.png) | ![Game over screen](assets/gameover.png) |
 
 ---
 
